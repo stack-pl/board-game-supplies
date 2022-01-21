@@ -1,0 +1,1742 @@
+reportLabContent:
+
+  - registerFont:
+      name: "Times"
+      path: "Times.ttf"
+  - registerFont:
+      name: "TimesB"
+      path: "TimesBD.ttf"
+  - registerFont:
+      name: "TimesI"
+      path: "TimesI.ttf"
+  - registerFont:
+      name: "TimesBI"
+      path: "TimesBI.ttf"
+  - registerFont:
+      name: "Input"
+      path: "fonts/Input-Regular_(InputMonoCondensed-Regular).ttf"
+  - registerFont:
+      name: "InputB"
+      path: "fonts/Input-Bold_(InputMonoCondensed-Bold).ttf"
+  - registerFont:
+      name: "InputI"
+      path: "fonts/Input-Italic_(InputMonoCondensed-Italic).ttf"
+  - registerFont:
+      name: "InputBI"
+      path: "fonts/Input-BoldItalic_(InputMonoCondensed-BoldItalic).ttf"
+  #  - registerFont:
+  #      name: "Consolas"
+  #      path: "Consola.ttf"
+  #  - registerFont:
+  #      name: "ConsolasB"
+  #      path: "ConsolaB.ttf"
+  #  - registerFont:
+  #      name: "ConsolasI"
+  #      path: "ConsolaI.ttf"
+  #  - registerFont:
+  #      name: "ConsolasBI"
+  #      path: "ConsolaZ.ttf"
+  #  - registerFont:
+  #      name: "Constantia"
+  #      path: "Constan.ttf"
+  #  - registerFont:
+  #      name: "ConstantiaB"
+  #      path: "ConstanB.ttf"
+  #  - registerFont:
+  #      name: "ConstantiaI"
+  #      path: "ConstanI.ttf"
+  #  - registerFont:
+  #      name: "ConstantiaBI"
+  #      path: "ConstanZ.ttf"
+
+  - registerFontFamily:
+      name: "Times"
+      normal: "Times"
+      bold: "TimesB"
+      italic: "TimesI"
+      boldItalic: "TimesBI"
+  - registerFontFamily:
+      name: "Input"
+      normal: "Input"
+      bold: "InputB"
+      italic: "InputI"
+      boldItalic: "InputBI"
+  #  - registerFontFamily:
+  #      name: "Consolas"
+  #      normal: "Consolas"
+  #      bold: "ConsolasB"
+  #      italic: "ConsolasI"
+  #      boldItalic: "ConsolasBI"
+  #  - registerFontFamily:
+  #      name: "Constantia"
+  #      normal: "Constantia"
+  #      bold: "ConstantiaB"
+  #      italic: "ConstantiaI"
+  #      boldItalic: "ConstantiaBI"
+
+
+  - paragraphStyle:
+      name: "common"
+      fontName: "Input"
+      fontSize: 8.5
+  - paragraphStyle:
+      name: "big"
+      fontName: "InputB"
+      fontSize: 12
+  - paragraphStyle:
+      name: "footer"
+      fontName: "InputB"
+      fontSize: 5
+      alignment: 2
+
+  - tableStyle:
+      name: "tablestyle1"
+      styleCommands:
+        - [ GRID, 0, 0, -1, -1, 0.8, 'grey' ]
+        - [ VALIGN, 0, 0, -1, -1, 'MIDDLE' ]
+        - [ LEFTPADDING, 0, 0, -1, -1, 2 ]
+        - [ RIGHTPADDING, 0, 0, -1, -1, 2 ]
+        - [ TOPPADDING, 0, 0, -1, -1, 1 ]
+        - [ BOTTOMPADDING, 0, 0, -1, -1, 0 ]
+  #        - [ BACKGROUND,0,0,-1,0,'black' ]
+  #        - [ LEFTPADDING, 0, 0, -1, 0, 3 ]
+  #        - [ RIGHTPADDING, 0, 0, -1, 0, 3 ]
+  #        - [ TOPPADDING, 0, 0, -1, 0, 3 ]
+  #        - [ BOTTOMPADDING, 0, 0, -1, 0, 3 ]
+  #        - [ SPAN, 0, 0, -1, 0 ]
+  #        - [ SPAN, 2, 0, -1, 0 ]
+  #        - [ SPAN, 0, 1, 1, 1 ]
+  #        - [ SPAN, 2, 1, -1, 1 ]
+  - tableStyle:
+      name: "head"
+      styleCommands:
+        - [ GRID, 0, 0, -1, -1, 1.0, 'black' ]
+        - [ BACKGROUND,0,0,-1,0,'black' ]
+        - [ LEFTPADDING, 0, 0, -1, 0, 4 ]
+        - [ RIGHTPADDING, 0, 0, -1, 0, 3 ]
+        - [ TOPPADDING, 0, 0, -1, 0, 1 ]
+        - [ BOTTOMPADDING, 0, 0, -1, 0, 4 ]
+        - [ SPAN, 0, 0, -1, 0 ]
+  - tableStyle:
+      name: "section"
+      styleCommands:
+        - [ GRID, 0, 0, -1, -1, 1.0, 'grey' ]
+        - [ BACKGROUND,0,0,-1,0,'lightgrey' ]
+        - [ LEFTPADDING, 0, 0, -1, 0, 7 ]
+        - [ RIGHTPADDING, 0, 0, -1, 0, 3 ]
+        - [ TOPPADDING, 0, 0, -1, 0, 1 ]
+        - [ BOTTOMPADDING, 0, 0, -1, 0, 2 ]
+        - [ SPAN, 0, 0, -1, 0 ]
+  - documentTemplate:
+      fileName: "pdf/Plansza-Podstawowa.pdf"
+      showBoundary: 0
+      pageTemplate:
+        id: "template1"
+        pagesize_x: 595.275
+        pagesize_y: 841.889
+        frame_list:
+          - frame:
+              id: "frame1"
+              x: 0
+              y: 0
+              width: 297.637
+              height: 841.889
+          - frame:
+              id: "frame2"
+              x: 297.637
+              y: 0
+              width: 297.637
+              height: 841.889
+      element_list:
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>1. ROZWÓJ</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+BUDOWNICTWO&nbsp;2,4<br />NAUKA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz kupić BUDOWNICTWO 2 lub 4 bez ponoszenia kosztu Żywności."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+ŻEGLUGA&nbsp;2,4<br />NAUKA 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz kupić ŻEGLUGĘ 2 lub 4 bez ponoszenia kosztu Żywności."
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+NAUKA&nbsp;1,2,3,4<br />DUCHOWOŚĆ 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Rozwinięcia NAUKI mogą być kupione bez ponoszenia kosztu Żywności."
+
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=9 name='InputB' color='black'>po zdobyciu rozwinięcia</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+BUDOWNICTWO 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po zdobyciu BUDOWNICTWO 2 dobierz Kartę Cudów."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+EDUKACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po zdobyciu Rozwinięcia EDUKACJA 1 dobierz 1 Kartę Akcji i 1 Kartę Celu."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+EDUKACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Natychmiast zyskujesz 1 Ideę."
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+NOWE ROZW.<br />EDUKACJA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Po zakupie dowolnego Rozwinięcia z użyciem co najmniej 1 Złota lub 1 Idei: Możesz wymienić 1 Ideę na 1 Żeton Nastroju."
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+NAUKA&nbsp;1,2,3,4<br />EDUKACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po zdobyciu dowolnego Rozwinięcia NAUKA zyskujesz 1 Ideę."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "+TRADYCJE 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po zdobyciu rozwinięcia TRADYCJE 3 dobierz Kartę Cudów."
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>2. ZAŁÓŻ MIASTO</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Posiadane Rozwinięcia nie wpływają na tę Akcję."
+        - spacer:
+            width: 7
+            height: 7
+
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "<font size=12 name='InputB' color='yellow'>3a. ZBIERZ SUROWCE&nbsp;&nbsp;(Aktywuj Miasto)</font>"
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ROLNICTWO 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Limit Żywności = 7"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ROLNICTWO 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz zbierać Żywność z Pustkowi"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ROLNICTWO 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Zbierz z 1 pola Lądu odległego o 2.<br />BUDOWNICTWO 4 daje możliwość zebrania z jeszcze jednego takiego pola."
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ŻEGLUGA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Twoje Miasta mogą Zbierać Żywność na Morzach"
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "EDUKACJA&nbsp;2"
+                      - col: 1
+                        additionalStyleCommands:
+                          - [ SPAN, 1, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Zyskujesz 1 Ideę jeśli Miasto ma Akademię"
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DEMOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Dodatkowa Akcja: Zapłać 1 Żeton Nastroju aby Zebrać (musi to być jedyna akcja Zbierania w tej turze)."
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>modyfikator Nastrojów</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "AUTOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Zapłać 1 Żeton Nastroju, aby w tej turze rozgniewane Miasta traktować jak neutralne (nadal mogą być aktywowane tylko raz)"
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>po zebraniu Surowców</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "NAUKA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Jeśli Zebrano co najmniej 2 Rudy, jedną z nich możesz zastąpić Złotem."
+
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>3b. WZNIEŚ BUDYNEK&nbsp;&nbsp;(Aktywuj Miasto)</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "BUDOWNICTWO 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz wznosić Cuda w szczęśliwych Miastach."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ŻEGLUGA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Portu"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "EDUKACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Akademii"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Fortecy"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DUCHOWOŚĆ 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Świątyni"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DUCHOWOŚĆ 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Wznieś Światynię bez ponoszenia kosztu Żywności"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "EKONOMIA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Targowiska"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TRADYCJE 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Obelisku"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "NAUKA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odblokowane Wznoszenie Obserwatorium"
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>modyfikator Nastrojów</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "AUTOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Zapłać 1 Żeton Nastroju, aby w tej turze rozgniewane Miasta traktować jak neutralne (nadal mogą być aktywowane tylko raz)"
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>po wzniesieniu Budynku</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TEOKRACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po Wzniesieniu Świątyni: Zyskujesz darmowe rozwinięcie TEOKRACJI."
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>3c. ZWERBUJ JEDNOSTKI&nbsp;&nbsp;(Aktywuj Miasto)</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "BUDOWNICTWO 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz kupić Osadników po 1 Żeton Nastroju za każdego."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 4<br />DEMOKRACJA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Skorzystanie z WOJSKOWOŚCI 4 (poniżej) kosztuje dodatkowy Żeton Nastroju."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz kupić pojedynczą Jednostkę Piechoty za 1 Żeton Nastroju."
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>modyfikator Nastrojów</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "AUTOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Zapłać 1 Żeton Nastroju, aby w tej turze rozgniewane Miasta traktować jak neutralne (nadal mogą być aktywowane tylko raz)"
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>po Zwerbowaniu</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "NAUKA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Odzyskaj 1 wydany Surowiec."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "AUTOKRACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po Zwerbowaniu co najmniej 1 Jednostki Wojskowej lub Statku: Zyskujesz 1 Żeton Nastroju lub Kultury."
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>4. RUCH JEDNOSTEK&nbsp;&nbsp;(do 3 jednostek/grup)</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "BUDOWNICTWO 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz zignorować rodzaj terenu i/lub poruszyć się o 2 pola jeśli Poruszasz się do/ze swoich Miast. Płacisz za to 1 Żywność i 1 Rudę za każdą z grup."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ŻEGLUGA 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Statki mogą Poruszać się dookoła Mapy na inne obszary z Morzami."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz Poruszać Jednostki Wojskowe"
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>po poruszeniu Jednoski</font>
+
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ŻEGLUGA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Poruszono co najmniej 1 Statek: +1 Idea. Dodatkowo, poruszono się na inne Morze: +1 Żeton Kultury."
+
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>5. ZWIĘKSZ SZCZĘŚLIWOŚĆ</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DUCHOWOŚĆ 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: Surowce mogą być użyte jako Żetony Nastroju
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DEMOKRACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "W ramach Akcji Dodatkowej: Zapłać 1 Żeton Nastroju aby wykonać Akcję Zwiększanie Szczęśliwości."
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>6. WPŁYW KULTUROWY&nbsp;&nbsp;(1 sukces na turę)</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TRADYCJE 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) W ramach Akcji Dodatkowej: Zapłać 1 Żeton Kultury, aby wykonać Akcję Wpływu Kulturowego."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TEOKRACJA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Dodaj +1 do rzutu i zyskaj 1 Żeton Kultury w przypadku sukcesu."
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>reakcja na wrogi Wpływ Kulturowy</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TRADYCJE 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Wrogowie nie mogą brać za cel twoich Miast z Cudami."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DEMOKRACJA 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Wrogowie nie mogą wzmacniać zasięgu lub rzutu przeciwko twoim szczęśliwym Miastom."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "AUTOKRACJA 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Wrogowie nie mogą wzmacniać zasięgu lub rzutu przeciwko twoim Miastom z Armiami."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TEOKRACJA 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Wrogowie nie mogą wzmacniać zasięgu lub rzutu przeciwko twoim Miastom ze Świątyniami."
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>Akcje otrzymywane z Rozwinięć</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "EKONOMIA 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Jako Akcja: Zapłać 1 Żeton Nastroju, aby zyskać 1 Żywnośc/Rudę/Drewno za każde posiadane Miasto. Posiadając EKONOMIĘ 4, możesz także zyskiwać Złoto."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TRADYCJE 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Jako Akcja: Zapłać 1 (lub 2) Żetony Kultury, aby poprawić Nastrój Miasta o 1 (lub 2 poziomy)."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DEMOKRACJA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Jako Akcja: Zyskujesz 3 Żetony nastroju."
+
+        #        - spacer:
+        #            width: 7
+        #            height: 7
+
+        # *******************************************************************************************
+        - pageBreak:
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>POCZĄTEK TURY</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "EKONOMIA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Zyskujesz 1 Żywność za Statek/Osadnika (maks.4), które możesz połączyć odkrytymi polami z różnymi, nierozgniewanymi Miastami innego gracza w zasięgu 2. Posiadając EKONOMIĘ 4, możesz także zyskiwać Złoto."
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>Ograniczenia posiadanych zasobów</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Brak&nbsp;ROLNICTWA&nbsp;2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Bez <i>Magazynowania</i> możesz posadać maks. 2 Żywności"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TEOKRACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "<i>Dogmaty</i> ograniczają inicjatywę do maks. 2 Idei."
+
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>Akcje Dodatkowe otrzymywane z Rozwinięć</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "EKONOMIA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Odrzuć kartę za 1 Złoto lub Żeton Kultury."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TRADYCJE 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Zapłać 1 Żeton Kultury, aby wykonać Akcję Wpływu Kulturowego."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TRADYCJE 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Wymień 1 Żeton Nastroju na 1 Żeton Kultury lub odwrotnie."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DEMOKRACJA 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Zapłać 1 Żeton Nastroju aby wykonać Akcję Zwiększanie Szczęśliwości."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DEMOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Zapłać 1 Żeton Nastroju aby Zebrać (musi to być jedyna akcja Zbierania w tej turze)."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "AUTOKRACJA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "(x1) Zapłać 2 Żetony Nastroju, aby wykonać dodatkową Akcję Główną (1-6)."
+
+        - spacer:
+            width: 7
+            height: 7
+        # *******************************************************************************************
+        - keepTogether:
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>WYDARZENIA - przeciwdziałanie</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ROLNICTWO 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: Zignoruj Wydarzenia "Głód"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "BUDOWNICTWO 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: Zignoruj Wydarzenia "Zaraza" i "Epidemia"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "DUCHOWOŚĆ 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz zapłacić 1 Żeton Nastroju, aby uniknąć obniżenia Nastroju wskutek Wydarzenia"
+# AZTEKOWIE 2
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "<b>DUCHOWOŚĆ 2</b>"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po dobraniu karty Wydarzenia usuń Jeńca, aby w całości anulować jej efekt i dobrać nową"
+# ! AZTEKOWIE 2
+
+        - spacer:
+            width: 7
+            height: 7
+
+#        - condPageBreak:
+#            heigh: 700
+        # *******************************************************************************************
+        - keepTogether:
+            - condPageBreak:
+                height: 700
+            - table:
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>Bitwa</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 1"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Możesz używać Taktyk na Kartach Akcji"
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 2"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Przed Bitwą Lądową: Zapłać, aby anulować zdolność +1 Kość Fortecy (2 Drewna) i/lub jej zdolność do anulowania trafienia (2 Rudy)."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Przed Bitwą Lądową: Zapłać 1 Rudę, aby dodać +2 Zdolności Konfliktu w każdej Rundzie Walki lub +1 jesli wróg też posiada WOJSKOWOŚĆ 3."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "WOJSKOWOŚĆ 3<br />NAUKA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Używasz WOJSKOWOŚCI 3 za darmo, w przypadku gdy wróg nie posiada tejże WOJSKOWOŚCI 3."
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TEOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Przed Bitwą w dowolnym Mieście ze Świątynią: Dodaj +2 Zdolności Konfliktu w 1 Rundzie."
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>reakcja na atak wroga</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "ŻEGLUGA 3"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Anuluj 1 trafienie w 1 Rundzie Bitew Morskich (oraz Bitew Lądowych jesli Armie atakują ze Statków)"
+
+# AZTEKOWIE 1
+            - table:
+                CONDITIONAL_NODE: Aztekowie
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>po wygranej Bitwie Lądowej</font>
+            - table:
+                CONDITIONAL_NODE: Aztekowie
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "<b>WOJSKOWOŚĆ 1</b>"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Każda pokonana Jednostka (poza Przywódcą) może zostać zatrzymana jako Jeniec"
+# ! AZTEKOWIE 1
+
+            - table:
+                style: section
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=10 name='InputB' color='black'>po przegranej Bitwie</font>
+            - table:
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "TEOKRACJA 4"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Po przegranej Bitwie w dowolnym Mieście ze Świątynią: Zyskujesz darmową Piechotę w swoim Mieście."
+
+# AZTEKOWIE DODATKOWE
+            - spacer:
+                CONDITIONAL_NODE: Aztekowie
+                width: 7
+                height: 7
+
+            - table:
+                CONDITIONAL_NODE: Aztekowie
+                style: head
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: <font size=12 name='InputB' color='yellow'>Dodatkowe zdolności Azteków</font>
+            - table:
+                CONDITIONAL_NODE: Aztekowie
+                style: tablestyle1
+                cols: 14
+                rows:
+                  - row:
+                      - col: 0
+                        additionalStyleCommands:
+                          - [ SPAN, 0, ROW_INDEX, 1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "<b>DUCHOWOŚĆ 2</b>"
+                      - col: 2
+                        additionalStyleCommands:
+                          - [ SPAN, 2, ROW_INDEX, -1, ROW_INDEX ]
+                        element_list:
+                          - paragraph:
+                              style: common
+                              content: "Usuń Jeńca, aby użyć go jako Żeton Kultury / Żeton Nastroju"
+# ! AZTEKOWIE PODSUMOWANIE
+
+
+
+        - keepTogether:
+            - spacer:
+                width: 230
+                height: 230
+
+            - paragraph:
+                style: footer
+                content: CLASH OF CULTURES - Lista kontrolna czynności<br />Dokument wygenerowany dla
+            - paragraph:
+                style: footer
+                content: EXTERNAL_PROPERTY(BUYER)
+            - paragraph:
+                style: footer
+                content: YamlyPdf, Wave sp. z o.o. EXTERNAL_PROPERTY(DATE), v1.0
