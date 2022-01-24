@@ -1,5 +1,9 @@
-# Add-ons for Clash Of Cultures Monumental Edition boardgame
+# Add-ons for Board Games 
 
-The Checklist (yaml) and Glossary data (csv) that are used to make paper/PDF files.
+Clash Of Cultures Monumental Edition boardgame
+- checklist (yaml),
+- glossary (csv).
+
+
 
 Feel free to send your Pull Request, especially a new language versions.
