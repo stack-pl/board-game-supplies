@@ -1,8 +1,8 @@
-# Add-ones for Board Games
+# Add-ons for Board Games
 
 Clash Of Cultures: Monumentalna Edycja Polska
-- checklist_pl.yaml,
-- glossary_pl.csv.
+- checklist_pl.yaml [lista kontrolna wszystkich czynności],
+- glossary_pl.csv [indeks haseł do instrukcji].
 
 
 

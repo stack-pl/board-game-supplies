@@ -1,0 +1,197 @@
+﻿Diagnose log at 2022-01-24T20:13:53Z
+
+Executable: C:\tools\Git\mingw64\libexec\git-core\git-credential-manager-core.exe
+Version: 2.0.605+97323d1677
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 22000)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\darek
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=DC-DEV
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\darek\OneDrive
+ChocolateyLastPathUpdate=132708159590070551
+WT_PROFILE_ID={0caa0dad-35be-5f56-a8ff-afceeeaa6101}
+TMP=C:\Users\darek\AppData\Local\Temp
+PROCESSOR_REVISION=8e0b
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+GIT_EXEC_PATH=C:/tools/Git/mingw64/libexec/git-core
+TEMP=C:\Users\darek\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\darek\AppData\Local
+MSYSTEM=MINGW64
+TERM=cygwin
+ProgramW6432=C:\Program Files
+JAVA_HOME=C:\tools\jdk-11
+USERDOMAIN=DC-DEV
+ProgramFiles(x86)=C:\Program Files (x86)
+Path=C:/tools/Git/mingw64/libexec/git-core;C:\tools\Git\mingw64\bin;C:\tools\Git\usr\bin;C:\Users\darek\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%ZOOKEEPER_HOME\bin%;C:\tools\jdk-11\bin;C:\tools\nodejs14\;C:\Program Files\dotnet\;C:\tools\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\tools\Git\cmd;C:\Users\darek\AppData\Local\Microsoft\WindowsApps;C:\Users\darek\AppData\Roaming\npm;C:\tools\flutter\bin;C:\Users\darek\.dotnet\tools;C:\tools\Git\bin;C:\tools\Git\usr\bin;C:\tools\python3.9;c:\Program Files\gs\gs9.54.0\bin
+PROCESSOR_LEVEL=6
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+TMPDIR=C:\Users\darek\AppData\Local\Temp
+PROMPT=$P$G
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+NUMBER_OF_PROCESSORS=8
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+WT_SESSION=598980d8-2f8e-4a1e-a3dc-4e99d9a3a226
+WSLENV=WT_SESSION::WT_PROFILE_ID
+ProgramFiles=C:\Program Files (x86)
+ProgramData=C:\ProgramData
+MSYS=enable_pcon
+ChocolateyInstall=C:\ProgramData\chocolatey
+PLINK_PROTOCOL=ssh
+SystemRoot=C:\WINDOWS
+HOME=C:\Users\darek
+LC_CTYPE=C.UTF-8
+CommonProgramW6432=C:\Program Files\Common Files
+LOGONSERVER=\\DC-DEV
+USERPROFILE=C:\Users\darek
+USERDOMAIN_ROAMINGPROFILE=DC-DEV
+APPDATA=C:\Users\darek\AppData\Roaming
+HOMEDRIVE=C:
+ZOOKEEPER_HOME=C:\tools\zookeeper
+VBOX_MSI_INSTALL_PATH=C:\tools\VirtualBox\
+USERNAME=darek
+PROCESSOR_ARCHITEW6432=AMD64
+PROCESSOR_ARCHITECTURE=x86
+OS=Windows_NT
+ComSpec=C:\WINDOWS\system32\cmd.exe
+SystemDrive=C:
+windir=C:\WINDOWS
+OneDriveConsumer=C:\Users\darek\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\darek\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\darek\AppData\Local\Temp\abdf49c6b2ba25ed81df7ccd'... OK
+Reading from temporary file 'C:\Users\darek\AppData\Local\Temp\abdf49c6b2ba25ed81df7ccd'... OK
+Deleting temporary file 'C:\Users\darek\AppData\Local\Temp\abdf49c6b2ba25ed81df7ccd'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\darek
+UserDataDirectoryPath: C:\Users\darek\.gcm
+GetCurrentDirectory(): C:\Users\darek\work\board-game-supplies
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking basic networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:55619/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+Testing with IHttpClientFactory created HTTP client...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:55621/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.34.1.windows.1'
+Locating current repository... OK
+Git repository at 'C:/Users/darek/work/board-game-supplies/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:C:/tools/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/tools/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/tools/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/tools/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/tools/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/tools/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/tools/Git/etc/gitconfig	http.sslcainfo=C:/tools/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/tools/Git/etc/gitconfig	core.autocrlf=true
+file:C:/tools/Git/etc/gitconfig	core.fscache=true
+file:C:/tools/Git/etc/gitconfig	core.symlinks=false
+file:C:/tools/Git/etc/gitconfig	pull.rebase=false
+file:C:/tools/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/tools/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/darek/.gitconfig	winupdater.recentlyseenversion=2.30.0.windows.2
+file:C:/Users/darek/.gitconfig	user.name=darek
+file:C:/Users/darek/.gitconfig	user.email=darek@poczta.mobi
+file:C:/Users/darek/.gitconfig	credential.helper=manager-core
+file:C:/Users/darek/.gitconfig	credential.helper=
+file:C:/Users/darek/.gitconfig	credential.helper=C:/tools/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/stack-pl/board-game-supplies.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\darek\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\darek\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
