@@ -1,4 +1,4 @@
-# Add-ons for Board Games
+# Add-ones for Board Games
 
 Clash Of Cultures: Monumentalna Edycja Polska
 - checklist_pl.yaml,
